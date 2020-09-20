@@ -1,0 +1,305 @@
+@font-face{
+	font-family: bigjohn;
+	src: url(BIGJOHN.otf);
+}
+
+@font-face{
+  font-family: slimjoe;
+  src: url(SlimJoe.otf);
+}
+
+body{
+  background-color: Gray;
+  background-image:url(images/Protest-in-Richland-Washington-on-May-30-Photo-by-Madison-Rosenbaum-scaled.jpg);
+  background-position: center;
+  background-size:cover;
+  background-blend-mode:soft-light;
+  background-attachment: fixed;
+}
+
+.heading{
+	padding-top: 50px;
+	width: 400px;
+	margin:auto;
+	top:0px; bottom:0px; right:0px; left:0px;
+	display: block;
+	text-align: center;
+}
+
+.title1{
+	font-family: bigjohn;
+	font-size: 43px;
+	border-bottom: 2px solid black;
+	padding-bottom: 20px;
+	margin-bottom: 10px;
+}
+
+.title2{
+	font-family: "Open Sans", Helvetica;
+	font-size: 14px;
+}
+
+.container1, .container2, .container3, .container4{
+	width: 1000px;
+	margin:auto;
+	display: block;
+	text-align: center;
+	font-size: 15px;
+}
+
+.container2{
+	margin-top: 250px;
+}
+
+.header{
+	font-family: bigjohn;
+	border-bottom: 2px solid black;
+	padding-bottom: 10px;
+	font-size: 30px;
+}
+.box1, .box2, .box3 {
+	float: left;
+	width: 330px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	border-radius: 10px;
+}
+
+.box1{
+	background-color: rgba(0,0,0,0.7);
+	color: white;
+	margin-right: 5px; 
+}
+
+.box2{
+	background-color: rgba(255,255,255,0.7);
+}
+
+.box3{
+	background-color: rgba(0,0,0,0.7);
+	color: white;
+	margin-left: 5px;
+}
+
+.words1{
+	padding-bottom: 20px;
+	display: block;
+}
+
+.words2{
+	padding-bottom: 20px;
+	display: block;
+	text-transform: uppercase;
+	font-family: slimjoe;
+	font-size: 20px;
+}
+
+
+.col1{
+	float:left;
+	width: 40%;
+	height: 370px;
+	background-color: black;
+	color:white;
+}
+
+.col2{
+	float:left;
+	width: 60%;
+	height: 370px;
+	background-image:url(images/graph1.jpg);
+}
+
+.caption1{
+	margin-top: 12px;
+}
+
+.words4{
+	padding-top: 110px;
+	padding-bottom: 20px;
+	display: block;
+	font-size: 20px;
+	width: 300px;
+	padding-left: 50px;
+}
+
+.words5{
+	padding-bottom: 20px;
+	display: block;
+	text-transform: uppercase;
+	font-family: slimjoe;
+	font-size: 25px;
+}
+
+.words6{
+	display: block;
+	font-size: 20px;
+	width: 300px;
+	padding-left: 50px;
+}
+
+.subcontainer1{
+	margin-top: 40px;
+}
+
+
+.col3{
+	float:left;
+	color:white;
+	margin-top: 50px;
+}
+
+.col4{
+	float:left;
+	width: 339px;
+	height: 230px;
+	background-color: black;
+	margin-top: 50px;
+	color: white;
+}
+
+.words7{
+	padding-top: 50px;
+	padding-bottom: 10px;
+	display: block;
+	font-size: 20px;
+	width: 271px;
+	padding-left: 34px;
+}
+
+.words8{
+	padding-bottom: 10px;
+	display: block;
+	text-transform: uppercase;
+	font-family: slimjoe;
+	font-size: 25px;
+}
+
+.words9{
+	display: block;
+	font-size: 20px;
+} 
+
+.container2:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.blurb{
+	font-family: "Open Sans", Helvetica;
+	font-size: 15px;
+  	background-color: rgba(220,220,220,0.4);
+}
+
+.col5{
+	float:left;
+	width:359px;
+	height: 300px;
+	background-color: black;
+	color:white;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-size: 20px;
+}
+
+.col6{
+	float: left;
+	width: 321px;
+	height: 300px;
+	background-image: url(images/graph3.jpg);
+	background-repeat: no-repeat;
+	background-color:white;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.col7{
+	float: left;
+	width: 320px;
+	height: 300px;
+	background-image: url(images/graph4.jpg);
+	background-repeat: no-repeat;
+	background-color:white;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.caption2, .caption3{
+	margin-top: 265px;
+}
+
+.word1{
+	padding-top: 30px;
+	padding-left: 30px;
+	width: 300px;
+	display: block;
+}
+
+.word2{
+	padding-top: 20px;
+	padding-left: 30px;
+	width: 300px;
+	display: block;
+}
+
+.words11{
+	font-weight: bold;
+}
+.words13, .words15{
+	background-color: gray;
+}
+
+.container3:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.col8{
+	float: left;
+	color: white;
+	background-color: black;
+	width: 380px;
+	height: 350px;
+	font-size: 20px;
+}
+
+.col9{
+	float: left;
+	background-color: white;
+	padding-top: 10px;
+	height: 340px;
+}
+
+.container4:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.container4{
+	margin-bottom: 50px;
+}
+
+.words16{
+	margin-top: 25px;
+	display: inline-block;
+	width: 300px;
+}
+
+.words17{
+	display: inline-block;
+	width: 300px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.words21{
+	display: block;
+	width: 300px;
+	padding-left: 40px;
+}
+
+.words19{
+	font-weight: bold;
+}

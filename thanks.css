@@ -1,0 +1,64 @@
+@font-face{
+	font-family: bigjohn;
+	src: url(BIGJOHN.otf);
+}
+
+@font-face{
+  font-family: slimjoe;
+  src: url(SlimJoe.otf);
+}
+
+body{
+	background-color: Gray;
+	background-image:url(images/merlin_173337204_a23056f4-81df-4acf-b661-d15e54be415c-superJumbo.jpg);
+	background-position: center;
+	background-size:cover;
+	background-blend-mode:soft-light;
+	background-attachment: fixed;
+}
+
+.heading{
+	width:900px;
+	height:400px;
+	margin:200px auto;
+	position:absolute;
+	top:0px; bottom:0px; right:0px; left:0px;
+	text-align: center;
+}
+
+.title1{
+	display: block;
+	text-align: center;
+	color: white;
+	font-size: 70pt;
+	font-family: bigjohn;
+}
+
+.title2{
+	display:block;
+	text-align:center;
+	color:white;
+	font-size: 18pt;
+	font-family: slimjoe;
+	margin-top:15px;
+}
+
+.learn{
+	width:180px;
+	height:50px;
+	border: 3px solid white;
+	background-color: transparent;
+	color: white;	
+	font-family: slimjoe;
+	font-weight: bold;
+	border-radius: 5px;
+	transition: background-color 1000ms, color 1000ms;
+	margin: 25px 
+}
+
+.learn:hover{
+	background-color: white;
+	color: black;
+	cursor: pointer;
+
+}

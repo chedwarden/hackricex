@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="report.css">
+	<title>Police Brutality Tracker</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<form method ="POST">
+		<h1>Enter Information</h1>
+		<h2>Protest Info</h2>
+		<label>		
+			<input type ="text" id="current_city" name="city" placeholder = "e.g. Houston" required>
+			<div class="labeltext"> City </div>
+		</label>
+		
+		<label>
+			<input type ="text" id="current_state" name="state" placeholder = "e.g. TX, OK, KS" required>
+			<div class="labeltext"> State </div>
+		</label>
+
+		<label>
+			<input type="text" name="protestdate" id="protestdate" placeholder="MM/DD/YYYY" required>
+			<div class="labeltext"> Date </div>
+		</label>
+
+		<label>
+			<input type="text" name="protestduration" id="protestduration" placeholder="e.g. 1h30m" required>
+			<div class="labeltext"> Duration </div>
+		</label>
+
+		<h2>Personal Info</h2>
+
+		<div class="container">
+			<h3>Were you injured by the Police?</h3>
+			<input type="radio" id="injured" name="injury" value="injured">
+			<label class="nontext">Yes, I was injured by the Police</label><br>
+			<input type="radio" id="notinjured" name="injury" value="notinjured">
+			<label class="nontext">No, I was not injured by the Police</label><br><br>
+
+			<h3>What force(s) did the police use against you?</h3>
+			<input type="hidden" id="force1" name="force1" value="0">
+			<input type="checkbox" id="force1" name="force1" value="1">
+			<label class="nontext">Teargas</label><br>
+			<input type="hidden" id="force2" name="force2" value="0">
+			<input type="checkbox" id="force2" name="force2" value="1">
+			<label class="nontext">Rubber Bullets</label><br>
+			<input type="hidden" id="force3" name="force3" value="0">
+			<input type="checkbox" id="force3" name="force3" value="1">
+			<label class="nontext">Brute Force e.g. Baton</label><br>
+			<input type="hidden" id="force4" name="force4" value="0">
+			<input type="checkbox" id="force4" name="force4" value="1">
+			<label class="nontext">Other Force(s)</label><br>
+		</div>
+		<label>
+			<input type="text" id="medicalcost" name="medicalcost" placeholder="e.g. 10,000 (limit 100,000)" required>
+			<div class="labeltext"> Cost of Medical Care For Injury(s) </div>
+		</label>
+
+		<label>
+			<input type="text" id="phone" name="phone" placeholder="e.g. 713-348-0000" required="">
+			<div class="labeltext"> Phone Number</div>
+		</label><br>
+
+		
+		<div class="button">
+			<button>Submit</button>
+		</div>
+	</form>
+
+	<script>
+    (() => {
+      const form = document.querySelector('form');
+      const submitResponse = document.querySelector('#response');
+      const formURL = 'https://23kpwbr9rh.execute-api.us-east-1.amazonaws.com/dev/protest/Prod/submitForm';
+
+      form.onsubmit = e => {
+        e.preventDefault();
+        
+        let data = {};
+        Array.from(form).map(input => (data[input.id] = input.value));
+        console.log('Sending: ', JSON.stringify(data));
+        
+
+    $.ajax({
+        method: "POST",
+        url: "https://23kpwbr9rh.execute-api.us-east-1.amazonaws.com/dev/protest",
+	   crossDomain: true,
+        data: JSON.stringify(data)
+    });
+ 
+ 
+      };
+    })();
+  </script>
+</body>
+</html>
+
+

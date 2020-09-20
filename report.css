@@ -1,0 +1,138 @@
+@font-face{
+  font-family: quicksand;
+  src: url(Quicksand-Regular.ttf);
+}
+
+@font-face{
+  font-family: slimjoe;
+  src: url(SlimJoe.otf);
+}
+
+@font-face{
+  font-family: bigjohn;
+  src: url(BIGJOHN.otf);
+}
+
+body{
+  background-color: Gray;
+  background-image:url(images/merlin_173017842_2257c506-5b15-4691-995b-04b2974d4a6d-superJumbo.jpg);
+  background-position: center;
+  background-size:cover;
+  background-blend-mode:soft-light;
+  background-attachment: fixed;
+  font-family: slimjoe;
+}
+
+label {
+  display: block;
+  letter-spacing: 3px;
+  padding-top: 30px;
+  text-align: center;
+}
+label .labeltext {
+  color: white;
+  cursor: text;
+  font-size: 20px;
+  font-family: "Open Sans", Helvetica;
+  line-height: 20px;
+  text-transform: uppercase;
+  transform: translateY(-34px);
+  transition: all 1000ms;
+}
+label input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  color: white;
+  font-size: 18px;
+  font-family: quicksand;
+  outline: none;
+  padding: 5px 20px;
+  text-align: center;
+  transition: all 0.3s;
+  width: 200px;
+}
+label input:focus {
+  max-width: 100%;
+  width: 400px;
+}
+
+label input:focus + .labeltext {
+  color: white;
+  font-size: 13px;
+  transform: translateY(-55px);
+}
+label input:valid + .labeltext {
+  font-size: 13px;
+  transform: translateY(-55px);
+}
+
+input::placeholder {
+  color:transparent;
+  font-family: quicksand;
+  font-size: 18px;
+}
+
+input:focus::placeholder {
+  color: rgb(255,255,255,0.5);
+  transition: all 2s;
+}
+button {
+  width:180px;
+  height:50px;
+  border: 3px solid black;
+  background-color: transparent;
+  color: white; 
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: all 1000ms;
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+
+button:hover, button:focus {
+  background-color: white;
+  border: solid white;
+  color:#222;
+  cursor: pointer;
+}
+
+.button{
+  text-align: center;
+}
+
+.nontext{
+  display: inline-block;
+  font-weight: bold;
+  font-family: quicksand;
+  padding-top: 10px;
+  text-align:left;
+  letter-spacing: 0px;
+}
+
+h1{
+  padding-top: 50px;
+  text-align: center;
+  font-family: bigjohn;
+  font-size: 40px;
+}
+
+h2{
+  text-align: center;
+  font-family: bigjohn;
+}
+
+h3{
+  margin-top: 0px;
+}
+.container{
+  width: 600px;
+  background-color: rgba(220,220,220,0.4);
+  opacity: 100%;
+  margin:auto;
+  padding: 25px 100px 25px 25px;
+  border-radius: 10px;
+}
+
